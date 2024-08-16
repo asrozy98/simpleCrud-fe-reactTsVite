@@ -84,7 +84,7 @@ function ModalCreate({
                         htmlFor="kota"
                         className="block text-xl font-medium leading-6 mb-2"
                       >
-                        Kota
+                        City
                       </label>
                       <input
                         id="kota"

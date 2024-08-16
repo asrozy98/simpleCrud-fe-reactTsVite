@@ -196,7 +196,10 @@ function App() {
         onChange={handleChange}
         onSubmit={handleSubmit}
         modalUpdate={modalUpdate}
-        onClose={() => setModalOpen(false)}
+        onClose={() => {
+          setModalOpen(false);
+          if (modalUpdate) setModalUpdate(false);
+        }}
       />
       <ModalDelete
         open={modalDelete}
